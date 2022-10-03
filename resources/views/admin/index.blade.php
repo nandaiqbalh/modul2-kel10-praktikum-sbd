@@ -48,7 +48,7 @@
                                 <form method="POST" action="{{ route('admin.delete', $data->id_admin) }}">
                                     @csrf
                                     <div class="modal-body">
-                                        Apakah anda yakin ingin menghapus data ini?
+                                        Apakah anda yakin ingin menghapus {{$data->username}}?
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
