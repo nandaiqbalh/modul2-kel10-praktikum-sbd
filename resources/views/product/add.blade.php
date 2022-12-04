@@ -33,6 +33,11 @@
                 <label for="stock" class="form-label">Stock Handphone</label>
                 <input type="text" class="form-control" id="stock" name="stock">
             </div>
+            @foreach($user_types as $usertype)
+            <div class="form-group">
+                {!! Form::select('chap_user_type_name',  array('chap_user_name' => $usertype), null, ['class' => 'form-control']) !!}
+            </div>
+        @endforeach
 			<div>
 				<input type="submit" class="btn btn-primary" value="Tambah" />
 			</div>
